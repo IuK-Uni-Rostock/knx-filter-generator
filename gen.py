@@ -105,7 +105,7 @@ def generate_rules_for_coupler(conn, installation_id, area, line):
                 rule += "--service A_GroupValue_Read "
                 rule += "--priority %s " % (d["Priority"])
                 rule += "--hopCount 6 "
-                rule += "--data ^00000$"
+                rule += "--data ^0{6}$"
 
                 ingress.append(rule)
 
@@ -117,7 +117,7 @@ def generate_rules_for_coupler(conn, installation_id, area, line):
                 rule += "--service A_GroupValue_Read "
                 rule += "--priority %s " % (d["Priority"])
                 rule += "--hopCount 6 "
-                rule += "--data ^00000$"
+                rule += "--data ^0{6}$"
 
                 egress.append(rule)
 
@@ -128,7 +128,7 @@ def generate_rules_for_coupler(conn, installation_id, area, line):
                 rule += "--service A_GroupValue_Read "
                 rule += "--priority %s " % (d["Priority"])
                 rule += "--hopCount 6 "
-                rule += "--data ^00000$"
+                rule += "--data ^0{6}$"
 
                 egress.append(rule)
 
